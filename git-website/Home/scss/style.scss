@@ -1,0 +1,170 @@
+// import variables
+@import 'variables';
+
+// scroll behaviour
+html {
+    scroll-behavior: smooth;
+}
+
+// Simple fade animation for all the elements in the page.
+* {
+    // Animation name
+    animation-name: fadeAn;
+    // Iteration count
+    animation-iteration-count: 1;
+    // Fill mode
+    animation-fill-mode: forwards;
+    // Timing
+    animation-timing-function: ease-in;
+    // Duration
+    animation-duration: 500ms;
+}
+
+@keyframes fadeAn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// body
+body {
+    text-align: center;
+    font-family: $font-sans;
+}
+
+// Go to top button
+
+// Navigation bar
+.navbar-top {
+    animation: navAn;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Git logo
+    .navbar-logo {
+        display: flex;
+
+        img {
+            width: 5em;
+            margin: $margin-min;
+            // width: 100%;
+            // float: left;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+    // Styling for the active directory
+    .link_active {
+        
+        background: $clr-accent;
+        color: $clr-light;
+    }
+    
+    a {
+        display: block;
+        color: $clr-dark;
+        text-decoration: none;
+        margin: $margin-min;
+        padding: $padding-min;
+        transition: 200ms;
+    }
+
+    i {
+        // display: block;
+        margin: $margin-min;
+    }
+
+    li a:hover {
+        color: $clr-light;
+        background: $clr-accent;
+    }
+}
+
+// Sections
+.section {
+    padding: $padding-max;
+
+    .down-btn {
+        background: $clr-accent;
+        padding: $padding-min;
+        color: $clr-light;
+        cursor: pointer;
+        // border-radius: $border-rad;
+        border: none;
+        transition: 200ms;
+    }
+    
+    .down-btn a {
+        padding: $padding-min;
+        text-decoration: none;
+        color: $clr-light;
+    }
+
+    .down-btn:hover {
+        // letter-spacing: 1px;
+        background: $clr-accent-dark;
+    }
+}
+
+// Wikipedia link properties
+.wiki-link {
+    background-image: linear-gradient(90deg, $clr-accent,$clr-accent-dark);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    text-decoration: none;
+    padding: .350em;
+    transition: 500ms;
+
+}
+// Wiki link hover properties
+.wiki-link:hover {
+    color: $clr-accent;
+    background-size: 100% 3px;
+}
+
+.section-2 {
+    // background: linear-gradient(50deg, rgb(179, 0, 0),rgb(1, 1, 194));
+    background: lightgrey;
+    h1 {
+        padding: $padding-min;
+        color: white;
+    }
+
+    .logo_container {
+        display: flex;
+        padding: $padding-max;
+        justify-content: space-between;
+
+        img {
+            width: 5em;
+            padding: 0.225em;
+
+            // Shadow
+            box-shadow: 5px 5px 20px black;
+            transition: 500ms;
+        }
+
+        img:hover {
+            opacity: 50%;
+        }
+    }
+
+}
+
+// --------------------------------------
+// -- Home page style sheet ends here. --
+// --------------------------------------

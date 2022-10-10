@@ -1,0 +1,24 @@
+body {
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.section {
+    text-align: justify;
+    padding: 0.2em;
+}
+
+.command {
+    font-family: monospace;
+    padding: 0.7em;
+    background: lightgrey;
+    border-radius: 0.5em;
+    width:50%;
+}

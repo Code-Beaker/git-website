@@ -1,0 +1,108 @@
+@import "variables";
+
+// import variables
+@import 'variables';
+
+// scroll behaviour
+html {
+    scroll-behavior: smooth;
+}
+
+// body
+body {
+    text-align: center;
+    font-family: $font-sans;
+}
+
+// Navigation bar
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Git logo
+    .navbar-logo {
+        display: flex;
+
+        img {
+            width: 5em;
+            margin: $margin-min;
+            // width: 100%;
+            // float: left;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+    // Styling for the active directory
+    .link_active {
+        
+        background: $clr-accent;
+        color: $clr-light;
+    }
+    
+    a {
+        display: block;
+        color: $clr-dark;
+        text-decoration: none;
+        margin: $margin-min;
+        padding: $padding-min;
+        transition: 200ms;
+    }
+
+    i {
+        // display: block;
+        margin: $margin-min;
+    }
+
+    li a:hover {
+        color: $clr-light;
+        background: $clr-accent;
+    }
+}
+
+.section {
+    padding: $padding-min;
+
+    strong {
+        color: red;
+    }
+
+    .os_container {        
+        align-content: center;
+        display: flex;
+        justify-content: space-evenly;
+
+        i {
+            font-size: 3em;
+            transition: 200ms;
+        }
+
+        #win {
+            color: deepskyblue;
+        }
+
+        #win:hover {
+            opacity: 80%;
+        }
+
+        #mac {
+            color: #303030;
+        }
+
+        #mac:hover {
+            opacity: 80%;
+        }
+
+        #linux:hover {
+            opacity: 80%;
+        }
+    }
+}
